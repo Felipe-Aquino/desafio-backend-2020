@@ -21,7 +21,7 @@ A organização do código, a estrutura das pastas fica à seu critério, assim 
 
 ## Especificação da aplicação
 
-Você irá desenvolver uma aplicação que permita criar um restaurante e um cardápio digital simplificado, contendo diversos produtos daquele restaurante. Para essas duas entidades, você deverá criar uma tabela em seu banco de dados com as seguintes características:
+Você irá desenvolver uma aplicação que permita criar um restaurante e um cardápio digital simplificado, contendo diversos produtos daquele restaurante. Para essas duas entidades, você deverá criar duas tabelas em seu banco de dados com as seguintes características:
 
 ### Restaurante
 
@@ -80,7 +80,7 @@ Para visualizar os dados em seu banco de dados, você pode utilizar o [Postbird]
 
 - **`PUT /products/:product_id`**: A rota deve receber como parâmetro o id do produto, e no corpo da requisição os dados que serão atualizados daquele produto
 
-**Dica**: Verifique sempre se o restaurante existe quando for realizar atualizar esse dado
+**Dica**: Verifique sempre se o restaurante existe quando for atualizar esse dado
 
 - **`DELETE /products/:product_id`**: A rota deve receber como parâmetro o id do produto (`product_id`), e deletar o mesmo. A rota deve retornar o status 204 com corpo vazio caso dê sucesso, ou um erro caso falhe ao deletrar o produto
 
