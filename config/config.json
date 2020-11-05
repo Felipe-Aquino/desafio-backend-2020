@@ -1,0 +1,26 @@
+{
+  "development": {
+    "username": "postgres",
+    "password": "password",
+    "host": "127.0.0.1",
+    "port": "5432",
+    "database": "digital_waiter",
+    "dialect": "postgres"
+  },
+  "test": {
+    "username": "postgres",
+    "password": "password",
+    "host": "127.0.0.1",
+    "port": "5432",
+    "database": "digital_waiter",
+    "dialect": "postgres"
+  },
+  "production": {
+    "username": "postgres",
+    "password": "password",
+    "host": "127.0.0.1",
+    "port": "5432",
+    "database": "digital_waiter",
+    "dialect": "postgres"
+  }
+}

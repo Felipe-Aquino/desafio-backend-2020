@@ -31,7 +31,7 @@ Você irá desenvolver uma aplicação que permita criar um restaurante e um car
   - Email do restaurante
 - `name:` String
   - Nome do restaurante
-- `adress:` String
+- `address:` String
   - String que guarda o endereço do restaurante
 - `phone`: String
   - Número de telefone caso o cliente queira entrar em contato com o restaurante
@@ -66,13 +66,13 @@ Para visualizar os dados em seu banco de dados, você pode utilizar o [Postbird]
 
 ### Rotas da aplicação
 
-- **`POST /restaurants`**: A rota deve receber `name`, `email`, `adress`, `phone` dentro do corpo da requisição. Ao cadastrar um novo restaurante, ele deve ser armazenado dentro do seu banco de dados e deve ser retornado o restaurante criado.
+- **`POST /restaurants`**: A rota deve receber `name`, `email`, `address`, `phone` dentro do corpo da requisição. Ao cadastrar um novo restaurante, ele deve ser armazenado dentro do seu banco de dados e deve ser retornado o restaurante criado.
 
 **Dica**: Antes de criar um novo restaurante, sempre verifique se já existe um restaurante com o mesmo nome e e-mail. Caso ele exista, retorne um erro.
 
 - **`GET /restaurants`**: A rota deve retornar todos os restaurantes cadastrados no banco de dados da aplicação e todos os seus dados
 
-- **`PUT /restaurants/:restaurant_id`**: A rota deve receber como parâmetro o id do restaurante (`restaurant_id`) e no corpo da requisição os dados que serão atualizados, que podem ser `name`, `email`, `adress`, `phone`.
+- **`PUT /restaurants/:restaurant_id`**: A rota deve receber como parâmetro o id do restaurante (`restaurant_id`) e no corpo da requisição os dados que serão atualizados, que podem ser `name`, `email`, `address`, `phone`.
 
 - **`DELETE /restaurants/:restaurant_id`**: A rota deve receber como parâmetro o id do restaurante (`restaurant_id`) e retornar o status 204 caso o restaurante seja deletado com sucesso, ou um erro caso falhe.
 
@@ -92,7 +92,7 @@ Para visualizar os dados em seu banco de dados, você pode utilizar o [Postbird]
 {
   "name": "Restaurante",
   "email": "restaurante@restaurante.com",
-  "adress": "Rua tal, Nº 120. nesse Bairro, naquela cidade",
+  "address": "Rua tal, Nº 120. nesse Bairro, naquela cidade",
   "phone": "(27) 00000-0000"
 }
 ```
@@ -104,7 +104,7 @@ Para visualizar os dados em seu banco de dados, você pode utilizar o [Postbird]
   "id": "1",
   "name": "Restaurante",
   "email": "restaurante@restaurante.com",
-  "adress": "Rua tal, Nº 120. nesse Bairro, naquela cidade",
+  "address": "Rua tal, Nº 120. nesse Bairro, naquela cidade",
   "phone": "(27) 00000-0000",
   "created_at": "2020-10-11T07:09:48.767Z",
   "updated_at": "2020-10-11T07:09:48.767Z"
